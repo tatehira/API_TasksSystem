@@ -1,3 +1,8 @@
+using Microsoft.EntityFrameworkCore;
+using TasksSystem.Date;
+using TasksSystem.Repository;
+using TasksSystem.Repository.Interfaces;
+
 namespace SistemasTarefas
 {
     public class Program
@@ -12,6 +17,13 @@ namespace SistemasTarefas
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
+
+            builder.Services.AddEntityFrameworkSqlServer()
+                .AddDbContext<TasksSystemDBContext>(
+                options => options.UseSqlServer(builder.Configuration.GetConnectionString("DataBase"))
+                );
+
+            builder.Services.AddScoped<IUserRepository, UserRepository>();
 
             var app = builder.Build();
 
