@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "v7oyPBfdYPRTMegqe2j0k5J8gg77ni6j8WZAFE8SgRUCf5Kx0083auin8dZu1vsdazyX1g8OyAgnOtW3FjSZpA==",
+  "dgSpecHash": "Vny1MOflGFI9bBkWrTc1vp/QltHcxe+GYzPNqy6EvFi6f0RtupGlvW0UaIY0UpsvSM1im9omaQAxUUUnvX8GBg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\wendrew.nick\\Documents\\1- Nick Arquivos\\Estudo\\API Nick\\API_SistemaTarefas\\TasksSystem\\SistemasTarefas\\TasksSystem.csproj",
+  "projectFilePath": "C:\\Users\\wendrew.nick\\Documents\\1- Nick Arquivos\\Estudo\\API_SistemaTarefas\\TasksSystem\\SistemasTarefas\\TasksSystem.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\wendrew.nick\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\wendrew.nick\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

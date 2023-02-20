@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using SistemasTarefas.Models;
+using TasksSystem.Date.Map;
 
 namespace TasksSystem.Date
 {
@@ -11,10 +12,13 @@ namespace TasksSystem.Date
         }
         
         public DbSet<UserModel> Users { get; set; } // creating table in BD with name 'Users'
-        public DbSet<TasksModel> Taks { get; set; }
+        public DbSet<TasksModel> Tasks { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            modelBuilder.ApplyConfiguration(new MapUser());
+            modelBuilder.ApplyConfiguration(new MapTasks());
+
             base.OnModelCreating(modelBuilder);
         }
     }

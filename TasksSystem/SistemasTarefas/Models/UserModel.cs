@@ -2,7 +2,6 @@
 
 namespace SistemasTarefas.Models
 {
-    [Table("")]
     public class UserModel
     {
         public int Id { get; set; }
